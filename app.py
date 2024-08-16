@@ -101,4 +101,4 @@ def create_zip_for_category(category):
     return zip_filepath
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
