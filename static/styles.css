@@ -1,64 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Basic Reset */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0fdf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
 }
 
 h1 {
     color: #333;
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 form {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #file-input {
     display: block;
-    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#file-input:focus {
+    border-color: #80bdff;
+    outline: none;
 }
 
 #upload-button {
-    display: block;
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #00BFFF;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #upload-button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
+    transform: translateY(-3px);
 }
 
 .links {
     text-align: center;
+    margin-top: 20px;
 }
 
 .download-link {
-    color: #0066cc;
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 .download-link:hover {
+    color: #0056b3;
     text-decoration: underline;
 }
 
 #file-list {
     margin-top: 15px;
     font-size: 14px;
+    color: #555;
 }
+

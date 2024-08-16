@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Upload Images</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="files" multiple>
-        <input type="submit" value="Upload">
-    </form>
-    <p><a href="{{ url_for('download', category='human') }}">Download Human Images</a></p>
-    <p><a href="{{ url_for('download', category='non_human') }}">Download Non-Human Images</a></p>
+    <div class="container">
+        <h1>Upload Images</h1>
+        <form id="upload-form" method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+            <input type="file" name="files" id="file-input" multiple>
+            <input type="submit" id="upload-button" value="Upload">
+        </form>
+        <div id="file-list"></div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

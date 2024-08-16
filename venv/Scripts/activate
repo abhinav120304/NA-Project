@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\hp\OneDrive\Desktop\NA project\venv"
+VIRTUAL_ENV="C:\Users\hp\OneDrive\Desktop\NA-PROJECT\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

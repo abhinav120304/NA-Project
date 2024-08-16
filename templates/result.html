@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<center>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/images (2).jpeg') }}" alt="Sample Image" class="sample-image">
+
+        <h1>Download Classified Images</h1>
+        <div class="links">
+            <a href="{{ url_for('download', category='human') }}">
+                <button class="download-button">Download Human Images</button>
+            </a>
+            <a href="{{ url_for('download', category='non_human') }}">
+                <button class="download-button">Download Non-Human Images</button>
+            </a>
+        </div>
+    </div>
+</body>
+</center>
+</html>

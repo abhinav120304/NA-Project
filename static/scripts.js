@@ -1,3 +1,4 @@
+// Display selected file names
 document.getElementById('file-input').addEventListener('change', function() {
     var fileList = document.getElementById('file-list');
     fileList.innerHTML = '';
@@ -9,6 +10,7 @@ document.getElementById('file-input').addEventListener('change', function() {
     }
 });
 
+// Alert if no files are selected
 document.getElementById('upload-form').addEventListener('submit', function(event) {
     var fileInput = document.getElementById('file-input');
     if (fileInput.files.length === 0) {

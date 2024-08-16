@@ -1,0 +1,73 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fdf0; /* Very light green */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.small-image {
+    max-width: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid #e0f7fa; /* Very light blue border */
+}
+
+/* Link (button) styling */
+.links {
+    margin-top: 20px;
+}
+.download-button {
+    background-color: #0a93d2; /* Light blue */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.download-link {
+    display: inline-block;
+    background-color: #b3e5fc; /* Light blue */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #81d4fa; /* Slightly darker light blue */
+}
+
+/* Footer or additional spacing */
+.footer {
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
